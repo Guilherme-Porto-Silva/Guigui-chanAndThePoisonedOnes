@@ -1,0 +1,102 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    font-family: "Bona Nova SC", serif;
+    font-size: large;
+}
+ .row, .around, .between, .column, body, section, main{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: center;
+    padding: 1%;
+ }
+ h1, p, h5, ul{
+   background-color: black;
+   outline-style: groove;
+   outline-width: 5px;
+   outline-color: #ffffff;
+   color: #ffffff;
+   padding: 5px;
+ }
+ h1{align-self: center;}
+ .between{align-items: space-between;}
+ .around{align-items: space-around;}
+ .row{flex-direction: row;}
+ body, section{
+    background-position: center;
+    background-image: url("../src/uemgsbricks.jpeg");
+    background-repeat: repeat;
+    background-size: contain;
+ }
+ img, section{
+    outline-style: groove;
+    outline-width: 5px;
+    outline-color: black;
+ }
+ section{
+    background-image: url("../src/uemgbench.jpeg");
+    width: 90%;
+    margin: 5%;
+ }
+ ul{
+   width: 65%;
+   margin: 5%;
+   align-items: center;
+}
+ header{
+    width: 80%;
+    margin: 5% 10%;
+    div{
+        background-image: url("../src/uemgsbricks.jpeg");
+        width: 90%;
+        margin: 5%;
+        padding: 10px;
+        outline-style: groove;
+        outline-width: 5px;
+        outline-color: black;
+        img{
+            position: absolute;
+            top: 30%;
+            left: 70%;
+            width: 10%;
+            outline-style: none;
+        }
+          h1{
+        font-family: "Oxygen";
+        font-size: larger;
+        background: none;
+        outline-style: none;
+      }
+    }
+    ul{
+      width: 50%;
+      margin: 5%;
+   }
+ }
+ h5{
+   background-color: #ffffff;
+   outline-color: black;
+   color: black;
+ }
+ @media screen and (max-width: 850px) {
+  img, h5{width: 90%;}
+  p{
+    width: 95%;
+    font-size: medium;
+  }
+  .row{flex-direction: column;}
+  header div img{top: 8%;}
+ }
+ @media screen and (max-width: 500px) {
+  section{
+    width: 100%;
+    margin: 0;
+  }
+  img, h5{margin-left: 5px;}
+  p{font-size: small;}
+  ul{width: 90%;}
+  header div img{top: 4%;}
+ }
+ @media screen and (max-width: 370px) {header div img{display: none;}}
