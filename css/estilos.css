@@ -44,7 +44,7 @@ section{
         main, .twoColumns{
             display: grid;
             grid-template-columns: repeat(3, 32%);
-            grid-column-gap: 3%;
+            grid-column-gap: 1.111%;
         }
         .outlineStyle{
             outline-style: ridge;
